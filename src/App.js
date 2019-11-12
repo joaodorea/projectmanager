@@ -1,18 +1,24 @@
 import React from "react";
 
-import { Layout } from "./components/layout/index.style";
-import Header from "./modules/shared/Header.jsx";
-import Sidebar from "./modules/shared/Sidebar.jsx";
+import Content from "./modules/home";
 
-import "./assets/scss/index.scss";
+import { Layout } from "./components/layout/index.style";
+import Header from "./components/header";
+import Sidebar from "./components/sidebar";
+
+import Theme from "./assets/styled/theme";
+import GlobalStyle from "./assets/styled/global";
 
 function App() {
   return (
-    <Layout>
-      <Sidebar />
-      <Header />
-      <h3>Content</h3>
-    </Layout>
+    <Theme>
+      <GlobalStyle />
+      <Layout>
+        <Sidebar />
+        <Header />
+        <Content />
+      </Layout>
+    </Theme>
   );
 }
 

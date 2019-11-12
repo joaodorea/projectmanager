@@ -7,6 +7,3 @@ export const Layout = styled.div`
   grid-template: 100px 1fr/350px 1fr;
 `;
 
-export const Title = styled.div`
-    
-`
