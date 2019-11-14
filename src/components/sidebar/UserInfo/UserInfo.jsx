@@ -1,5 +1,5 @@
 import React from "react";
-import { Wrapper, Avatar, Name, Job, IconMore } from "./UserInfo.style";
+import { Wrapper, Avatar, Name, Job, IconMore } from "./userInfo.style";
 
 export default function UserTag() {
   return (

@@ -5,8 +5,8 @@ export const Wrapper = styled.div`
   grid-template: 1fr 1fr/60px 1fr 20px;
   grid-column-gap: 20px;
   align-items: center;
-  margin: 20px -30px;
-  padding: 20px 30px;
+  /* margin: 20px -${props => props.theme.sidebarPadding}; */
+  padding: 20px ${props => props.theme.sidebarPadding};
   background-color: ${props => props.theme.color_darkGray};
 `;
 

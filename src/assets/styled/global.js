@@ -7,7 +7,7 @@ export default createGlobalStyle`
 
         * {
             box-sizing: border-box;
-            overflow: auto;
+            /* overflow: auto; */
         }
         p {
             margin: 0;

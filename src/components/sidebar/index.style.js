@@ -4,35 +4,38 @@ export const Sidebar = styled.div`
   background-color: black;
   color: white;
   height: 100%;
-  padding: 30px;
+  /* padding: ${props => props.theme.sidebarPadding}; */
   grid-row: 1/3;
   font-size: 0.9rem;
+  font-weight: 600;
 `;
 
-export const Sidebar_Header = styled.header`
+export const SidebarHeader = styled.header`
   display: flex;
   align-items: center;
   text-transform: uppercase;
   font-size: 1.1rem;
   font-weight: 900;
+  padding: 20px ${p => p.theme.sidebarPadding};
 `;
-export const Sidebar_Subtitle = styled.h3`
+export const SidebarSubtitle = styled.h3`
   color: ${props => props.theme.color_gray};
   text-transform: uppercase;
   font-size: 0.8rem;
-  margin-top: 20px;
+  padding: 0 ${p => p.theme.sidebarPadding};
+  margin-top: ${props => props.theme.sidebarPadding};
 `;
-export const Search_Title = styled.h2`
+export const SearchTitle = styled.h2`
   font-size: 1.2rem;
   padding: 0 15px;
   flex: 1;
 `;
 
-export const Tasks_Icon = styled.i`
+export const TasksIcon = styled.i`
   color: ${props => props.theme.color_yellow};
 `;
 
-export const Search_Icon = styled.i`
+export const SearchIcon = styled.i`
   /* position: relative; */
   color: ${props => props.theme.color_gray};
   font-size: 1rem;
@@ -50,17 +53,19 @@ export const Search_Icon = styled.i`
 export const Stats = styled.div`
   display: grid;
   grid-template: 1fr 1fr/1fr 1fr;
-  grid-row-gap: 10px;
+  grid-row-gap: 5px;
+  padding: ${p => p.theme.sidebarPadding};
+  padding-bottom: 0;
 `;
 
-export const Stats_Number = styled.p`
+export const StatsNumber = styled.p`
   font-size: 1.5rem;
   color: white;
   font-weight: 600;
   order: ${props => props.order || 0};
 `;
 
-export const Stats_Title = styled.p`
+export const StatsTitle = styled.p`
   color: ${props => props.theme.color_gray};
   order: ${props => props.order || 0};
   font-weight: 600;
@@ -70,11 +75,14 @@ export const Menu = styled.div`
   font-weight: 600;
 `;
 
-export const Menu_Item = styled.p`
+export const MenuItem = styled.p`
   color: white;
-  margin-top: 20px;
   font-weight: 600;
   cursor: pointer;
+  padding: 10px ${p => p.theme.sidebarPadding};
+  &:hover {
+    background-color: ${p => p.theme.color_darkGray};
+  }
 `;
 
 export const Notifications = styled.span`
@@ -86,4 +94,16 @@ export const Notifications = styled.span`
   border-radius: 50%;
   line-height: 18px;
   text-align: center;
+`;
+
+export const Footer = styled.footer`
+  padding: ${p => p.theme.sidebarPadding};
+  width: 70%;
+  line-height: 1.4rem;
+`;
+
+export const Highlighted = styled.span`
+  color: ${p => p.theme.color_yellow};
+  border-bottom: 1px dotted ${p => p.theme.color_yellow};
+  cursor: pointer;
 `;
