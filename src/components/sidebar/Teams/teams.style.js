@@ -7,7 +7,7 @@ export const Item = styled.div`
   cursor: pointer;
   padding: 10px ${props => props.theme.sidebarPadding};
   &:hover {
-    background-color: ${props => props.theme.color_darkGray};
+    background-color: ${props => props.theme.color.darkGray};
   }
 `;
 export const UserAvatar = styled.img`
@@ -15,7 +15,7 @@ export const UserAvatar = styled.img`
   height: 20px;
   border-radius: 50%;
   margin-right: 5px;
-  background: ${props => props.src || props.theme.color_yellow};
+  background: ${props => props.src || props.theme.color.yellow};
 `;
 export const Text = styled.p`
   flex: 1;

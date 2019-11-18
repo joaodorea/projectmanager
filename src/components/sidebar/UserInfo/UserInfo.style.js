@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   align-items: center;
   /* margin: 20px -${props => props.theme.sidebarPadding}; */
   padding: 20px ${props => props.theme.sidebarPadding};
-  background-color: ${props => props.theme.color_darkGray};
+  background-color: ${props => props.theme.color.darkGray};
 `;
 
 export const Avatar = styled.img`
@@ -22,13 +22,13 @@ export const Name = styled.h3`
 `;
 
 export const Job = styled.p`
-  color: ${props => props.theme.color_gray};
+  color: ${props => props.theme.color.gray};
   margin: 0;
   font-weight: 600;
 `;
 
 export const IconMore = styled.p`
-  color: ${props => props.theme.color_gray};
+  color: ${props => props.theme.color.gray};
   grid-area: 1/3/3/4;
   cursor: pointer;
 `;

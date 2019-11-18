@@ -14,7 +14,7 @@ const Color = styled.div`
   width: 100px;
   height: 100px;
   box-shadow: 1px 2px 2px #cccccc;
-  background-color: ${props => props.theme["color_" + props.color] || "white"};
+  background-color: ${props => props.theme.color[props.color] || "white"};
 `;
 
 const Wrapper = styled.div`
