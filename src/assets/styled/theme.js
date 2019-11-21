@@ -18,7 +18,8 @@ const Theme = {
       "#212121"
     ],
     yellow: "#ffc107",
-    black: "#000000"
+    black: "#000000",
+    beige: "#eeebe4"
   },
   fontSize: {
     xm: ".8rem",
