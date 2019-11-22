@@ -15,7 +15,7 @@ export const UserAvatar = styled.img`
   height: 20px;
   border-radius: 50%;
   margin-right: 5px;
-  background: ${props => props.src || props.theme.color.yellow};
+  background: ${props => props.src || props.theme.primary};
 `;
 export const Text = styled.p`
   flex: 1;

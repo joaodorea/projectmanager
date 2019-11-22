@@ -15,5 +15,5 @@ export const Item = styled.span`
   font-size: ${p => p.theme.fontSize.sm};
   cursor: pointer;
   font-weight: 600;
-  border-bottom: ${p => (p.active ? "2px solid " + p.theme.color.yellow : "")};
+  border-bottom: ${p => (p.active ? "2px solid " + p.theme.primary : "")};
 `;

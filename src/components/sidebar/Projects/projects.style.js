@@ -13,5 +13,5 @@ export const Image = styled.div`
   height: 20px;
   border-radius: 4px;
   margin-right: 10px;
-  background: ${props => props.url || props.theme.color.yellow};
+  background: ${props => props.url || props.theme.primary};
 `;

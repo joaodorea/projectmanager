@@ -7,3 +7,7 @@ export const Layout = styled.div`
   grid-template: auto 1fr/350px 1fr;
 `;
 
+export const Content = styled.div`
+  background-color: ${p => p.theme.color.beige};
+  padding: ${p => p.theme.PL};
+`;

@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
 `;
 
 export const User = styled.img`
-  ${p => p.theme.avatar(p)};
+  ${p => p.theme.avatar};
   margin: 0 2px;
 `;
 

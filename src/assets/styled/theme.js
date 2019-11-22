@@ -26,6 +26,11 @@ const Theme = {
     sm: ".9rem",
     md: "1rem"
   },
+  fontWeight: {
+    regular: 400,
+    bold: 700,
+    bolder: 900
+  },
   PL: "30px",
   PM: "20px",
   PS: "10px",
@@ -33,15 +38,17 @@ const Theme = {
   BtnRadius: ["2px", "4px", "8px", "16px"]
 };
 
+Theme.primary = Theme.color.yellow;
 Theme.color.lightGray = Theme.color.grays[7];
 Theme.color.darkGray = Theme.color.grays[9];
+Theme.dividerColor = Theme.color.grays[2];
 
 Theme.BtnSmRadius = Theme.BtnRadius[1];
 
 Theme.BtnCellSm = css`
-  color: ${p => p.theme.color[p.color]};
+  color: ${p => p.theme.color[p.color] || p.color};
   background-color: ${p =>
-    !p.color ? "unset" : lighten(0.4, p.theme.color[p.color])};
+    !p.color ? "unset" : lighten(0.4, p.theme.color[p.color] || p.color)};
   cursor: pointer;
   padding: 5px 15px;
   font-size: 0.6rem;
@@ -50,15 +57,16 @@ Theme.BtnCellSm = css`
   font-weight: bold;
 `;
 
-Theme.avatar = props => ({
-  width: props.size,
-  height: props.size,
-  "border-radius": props.rounded
-    ? getValueAndUnit(props.size)[0] * 0.2
-    : props.circle
-    ? "50%"
-    : "unset"
-});
+Theme.avatar = css`
+  width: ${p => p.size};
+  height: ${p => p.size};
+  border-radius: ${p =>
+    p.rounded
+      ? getValueAndUnit(p.size)[0] * 0.2 + "px"
+      : p.circle
+      ? "50%"
+      : "unset"};
+`;
 
 Theme.headerMainTextColor = Theme.color.darkGray;
 
@@ -73,7 +81,7 @@ Theme.sidebarHoverSelec = css`
     "background-color:" +
       Theme.color.darkGray +
       ";border-left: 3px solid " +
-      props.theme.color.yellow}
+      props.theme.primary}
 `;
 
 export default function({ children }) {

@@ -5,7 +5,7 @@ export default createGlobalStyle`
     ${ResetCss};
     body {
         margin: 0;
-        font-family: sans-serif;
+        font-family: 'Lato', sans-serif;
 
         * {
             box-sizing: border-box;
