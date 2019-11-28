@@ -1,8 +1,8 @@
 import React from "react";
-import { ThemeProvider, css } from "styled-components";
+import { ThemeProvider, css, DefaultTheme } from "styled-components";
 import { getValueAndUnit, lighten } from "polished";
 
-const Theme = {
+const Theme: DefaultTheme = {
   color: {
     gray: "#9c9c9c",
     grays: [
