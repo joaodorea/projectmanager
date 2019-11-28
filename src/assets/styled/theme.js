@@ -19,12 +19,18 @@ const Theme = {
     ],
     yellow: "#ffc107",
     black: "#000000",
-    beige: "#eeebe4"
+    beige: "#eeebe4",
+    green: "#7db874",
+    lightGreen: "#cef8c6",
+    lightYellow: "cornsilk",
+    lightBlue: "#e3efff"
   },
   fontSize: {
     xm: ".8rem",
     sm: ".9rem",
-    md: "1rem"
+    md: "1rem",
+    lg: "1.3rem",
+    xl: "1.7rem"
   },
   fontWeight: {
     regular: 400,
@@ -43,8 +49,12 @@ Theme.color.lightGray = Theme.color.grays[7];
 Theme.color.darkGray = Theme.color.grays[9];
 Theme.dividerColor = Theme.color.grays[2];
 
-Theme.BtnSmRadius = Theme.BtnRadius[1];
+Theme.title = css`
+  font-size: ${p => p.theme.fontSize.lg};
+  font-weight: ${p => p.theme.fontWeight.bold};
+`;
 
+Theme.BtnSmRadius = Theme.BtnRadius[1];
 Theme.BtnCellSm = css`
   color: ${p => p.theme.color[p.color] || p.color};
   background-color: ${p =>
@@ -55,6 +65,19 @@ Theme.BtnCellSm = css`
   border-radius: 20px;
   border: none;
   font-weight: bold;
+`;
+Theme.BtnMd = css`
+  ${Theme.BtnCellSm};
+  padding: 7px 20px;
+  font-size: ${Theme.fontSize.xm};
+`;
+
+Theme.CardContainer = css`
+  background-color: white;
+  width: 100%;
+  padding: ${p => (p.padding ? p.theme.PM : "unset")};
+  border-radius: ${p => p.theme.BtnRadius[2]};
+  box-shadow: 0px 2px 4px hsla(0, 0%, 0%, 0.03);
 `;
 
 Theme.avatar = css`

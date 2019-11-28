@@ -8,7 +8,8 @@ import {
   Row,
   Cell,
   Image,
-  Pill
+  Pill,
+  Button
 } from "./index.style";
 
 export default function TableList() {
@@ -38,7 +39,9 @@ export default function TableList() {
               <Pill color="yellow">Marketing</Pill>
             </Cell>
             <Cell>08 Jan 2019</Cell>
-            <Cell>Actions</Cell>
+            <Cell>
+              <Button color="lightGray">Action</Button>{" "}
+            </Cell>
           </Row>
           <Row>
             <Cell>
@@ -51,7 +54,9 @@ export default function TableList() {
               <Pill color="blue">Design</Pill>
             </Cell>
             <Cell>08 Jan 2019</Cell>
-            <Cell>Actions</Cell>
+            <Cell>
+              <Button color="lightGray">Action</Button>{" "}
+            </Cell>
           </Row>
           <Row>
             <Cell>
@@ -64,7 +69,9 @@ export default function TableList() {
               <Pill color="orange">Development</Pill>
             </Cell>
             <Cell>08 Jan 2019</Cell>
-            <Cell>Actions</Cell>
+            <Cell>
+              <Button color="lightGray">Action</Button>
+            </Cell>
           </Row>
         </List>
       </Table>

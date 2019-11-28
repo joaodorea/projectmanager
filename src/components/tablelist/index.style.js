@@ -20,7 +20,10 @@ export const HeaderCell = styled.th`
   color: ${p => p.theme.color.grays[5]};
   font-weight: ${p => p.theme.fontWeight.bold};
   text-align: left;
-  padding: ${p => p.theme.PM} ${p => p.theme.PL} ${p => p.theme.PS};
+  padding: ${p => p.theme.PM} ${p => p.theme.PM} ${p => p.theme.PS};
+  & + & {
+    padding: ${p => p.theme.PM} ${p => p.theme.PS} ${p => p.theme.PS};
+  }
 `;
 
 export const List = styled.tbody`
@@ -40,8 +43,11 @@ export const Row = styled.tr`
 `;
 
 export const Cell = styled.td`
-  color: ${p => (p.black ? "black" : p.theme.lightGray)};
-  padding: ${p => p.theme.PS} ${p => p.theme.PL};
+  color: ${p => (p.black ? "black" : p.theme.lightGray)};  
+  padding: ${p => p.theme.PS} ${p => p.theme.PM};
+  & + & {
+    padding: ${p => p.theme.PS};
+  }
   /* font-weight: ${p => p.theme.fontWeight.bold}; */
   vertical-align: middle;
 `;
@@ -49,6 +55,9 @@ export const Pill = styled.span`
   position: relative;
   left: -${p => p.theme.PS};
   ${p => p.theme.BtnCellSm};
+`;
+export const Button = styled.button`
+  ${p => p.theme.BtnMd};
 `;
 export const Image = styled.img`
   ${p => p.theme.avatar}

@@ -5,6 +5,7 @@ export default createGlobalStyle`
     ${ResetCss};
     body {
         margin: 0;
+        font-size: 14px;
         font-family: 'Lato', sans-serif;
 
         * {

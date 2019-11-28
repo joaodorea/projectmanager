@@ -1,6 +1,6 @@
 import React from "react";
 
-import Content from "./modules/home";
+import Content from "./modules/home/index";
 
 import { Layout } from "./components/layout/index.style";
 import Header from "./components/header";
