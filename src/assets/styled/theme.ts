@@ -1,5 +1,6 @@
 import { css } from "styled-components";
 import { getValueAndUnit, lighten } from "polished";
+import StyleClosetTheme from "./interface";
 
 const color: any = {
   gray: "#9c9c9c",
@@ -119,24 +120,6 @@ const sidebarHoverSelec = css`
   }
 `;
 
-interface StyleClosetTheme {
-  color: any;
-  fontSize: string[];
-  fontWeight: object;
-  space: string[];
-  BtnRadius: string[];
-  title: any;
-  BtnSmRadius: any;
-  BtnCellSm: any;
-  BtnMd: any;
-  CardContainer: any;
-  avatar: any;
-  headerMainTextColor: any;
-  sidebarPadding: any;
-  sidebarBgHover: any;
-  sidebarHoverSelec: any;
-}
-
 const theme: StyleClosetTheme = {
   color,
   fontSize,
@@ -155,4 +138,4 @@ const theme: StyleClosetTheme = {
   sidebarHoverSelec
 };
 
-export { theme, StyleClosetTheme };
+export { theme };
