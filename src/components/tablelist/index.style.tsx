@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { IImageProps, ICellProps } from "./index.interface";
 
 export const Card = styled.div`
   background-color: white;
@@ -42,7 +43,7 @@ export const Row = styled.tr`
   }
 `;
 
-export const Cell = styled.td`
+export const Cell = styled.td<ICellProps>`
   color: ${p => (p.black ? "black" : p.theme.lightGray)};  
   padding: ${p => p.theme.PS} ${p => p.theme.PM};
   & + & {
@@ -59,6 +60,6 @@ export const Pill = styled.span`
 export const Button = styled.button`
   ${p => p.theme.BtnMd};
 `;
-export const Image = styled.img`
+export const Image = styled.img<IImageProps>`
   ${p => p.theme.avatar}
 `;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ICardProps } from "./index.interface";
 
 export const Content = styled.div`
   display: grid;
@@ -9,7 +10,7 @@ export const Content = styled.div`
 `;
 export const Column = styled.div``;
 
-export const Card = styled.div`
+export const Card = styled.div<ICardProps>`
   ${p => p.theme.CardContainer}
 `;
 export const Title = styled.div`

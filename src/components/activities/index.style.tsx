@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { IIconProps, IContainerProps } from "./index.interface";
 
-export const Container = styled.div`
-  ${p => p.theme.CardContainer};
+export const Container = styled.div<IContainerProps>`
+  ${p => p.theme.CardContainer}
 `;
 
 export const Title = styled.h2`
@@ -23,9 +24,9 @@ export const Item = styled.div`
   grid-column-gap: 15px;
   margin: ${p => p.theme.PS} 0;
 `;
-export const Icon = styled.div`
+export const Icon = styled.div<IIconProps>`
   border-radius: 50%;
-  background: ${p => p.theme.color[p.color] || p.color};
+  background: ${({ color, theme }) => theme.color[color] || color};
   color: hsla(0, 0%, 0%, 0.7);
   font-size: ${p => p.theme.fontSize.sm};
   text-align: center;

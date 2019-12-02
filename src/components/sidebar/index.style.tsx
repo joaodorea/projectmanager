@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { IStatsTitleProps, IStatsNumberProps } from "./index.interface";
 
 export const Sidebar = styled.div`
   background-color: black;
@@ -58,14 +59,14 @@ export const Stats = styled.div`
   padding-bottom: 0;
 `;
 
-export const StatsNumber = styled.p`
+export const StatsNumber = styled.p<IStatsNumberProps>`
   font-size: 1.5rem;
   color: white;
   font-weight: 600;
   order: ${props => props.order || 0};
 `;
 
-export const StatsTitle = styled.p`
+export const StatsTitle = styled.p<IStatsTitleProps>`
   color: ${props => props.theme.color.gray};
   order: ${props => props.order || 0};
   font-weight: 600;
