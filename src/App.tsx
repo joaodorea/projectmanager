@@ -1,6 +1,8 @@
 import React from "react";
 
-import { Content } from "./modules/home/index.style";
+import Activity from "./modules/activity/index";
+// import Files from "./modules/files/index";
+// import Home from "./modules/home/index";
 
 import { Layout } from "./components/layout/index.style";
 import Header from "./components/header/";
@@ -14,7 +16,7 @@ function App() {
       <Layout>
         <Sidebar />
         <Header />
-        <Content />
+        <Activity />
       </Layout>
     </Theme>
   );

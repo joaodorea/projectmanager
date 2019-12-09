@@ -1,5 +1,11 @@
 import styled from "styled-components";
-import { IItemProps, IImageProps } from "../index.interface";
+
+export interface IItemProps {
+  selected?: boolean;
+}
+export interface IImageProps {
+  url?: string;
+}
 
 export const Projects = styled.div``;
 export const Item = styled.div<IItemProps>`

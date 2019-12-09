@@ -1,5 +1,13 @@
 import styled from "styled-components";
-import { IImageProps, ICellProps } from "./index.interface";
+
+export interface IImageProps {
+  rounded?: boolean;
+  size: string;
+  src: string;
+}
+export interface ICellProps {
+  black?: boolean;
+}
 
 export const Card = styled.div`
   background-color: white;

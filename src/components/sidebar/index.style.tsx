@@ -1,5 +1,11 @@
 import styled from "styled-components";
-import { IStatsTitleProps, IStatsNumberProps } from "./index.interface";
+
+export interface IStatsTitleProps {
+  order?: string;
+}
+export interface IStatsNumberProps {
+  order?: string;
+}
 
 export const Sidebar = styled.div`
   background-color: black;

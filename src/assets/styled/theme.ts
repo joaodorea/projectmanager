@@ -1,8 +1,8 @@
 import { css } from "styled-components";
 import { getValueAndUnit, lighten } from "polished";
-import StyleClosetTheme from "./interface";
+import StyleClosetTheme, { Color } from "./interface";
 
-const color: any = {
+const color: Color = {
   gray: "#9c9c9c",
   grays: [
     "#FAFAFA",
@@ -50,6 +50,7 @@ const space = [
   "1.2rem",
   "1.6rem",
   "2.0rem",
+  "2.6rem",
   "3.2rem",
   "4.8rem",
   "6.4rem",

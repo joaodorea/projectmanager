@@ -1,9 +1,9 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import { ThemeProvider } from "./styled-components";
 import { theme } from "./theme";
 import GlobalStyle from "./global";
 
-export default function({ children }: any) {
+const Comp: FunctionComponent = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
       <>
@@ -12,4 +12,6 @@ export default function({ children }: any) {
       </>
     </ThemeProvider>
   );
-}
+};
+
+export default Comp;

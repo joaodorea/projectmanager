@@ -1,7 +1,7 @@
 export default interface StyleClosetTheme {
-  color: any;
+  color: Color;
   fontSize: string[];
-  fontWeight: object;
+  fontWeight: fontWeight;
   space: string[];
   BtnRadius: string[];
   title: any;
@@ -14,4 +14,27 @@ export default interface StyleClosetTheme {
   sidebarPadding: any;
   sidebarBgHover: any;
   sidebarHoverSelec: any;
+}
+
+export interface Color {
+  gray: string;
+  grays: Array<string>;
+  yellow: string;
+  black: string;
+  beige: string;
+  green: string;
+  lightGreen: string;
+  lightYellow: string;
+  lightBlue: string;
+
+  primary?: string;
+  lightGray?: string;
+  darkGray?: string;
+  dividerColor?: string;
+}
+
+export interface fontWeight {
+  regular: number;
+  bold: number;
+  bolder: number;
 }

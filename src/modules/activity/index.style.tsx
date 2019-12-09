@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from "../../assets/styled/styled-components";
 
-export interface ICardProps {
+interface ICardProps {
   padding?: boolean;
 }
 
@@ -9,7 +9,7 @@ export const Content = styled.div`
   grid-template: 1fr / 2fr 1fr;
   grid-column-gap: 20px;
   background-color: ${p => p.theme.color.beige};
-  padding: ${p => p.theme.PL};
+  padding: ${p => p.theme.space[4]};
 `;
 export const Column = styled.div``;
 
