@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "../../../assets/styled/styled-components";
 import { IUserProps } from "../index.interface";
 
 export const Wrapper = styled.div`

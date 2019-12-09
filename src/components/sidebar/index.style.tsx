@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "../../assets/styled/styled-components";
 
 export interface IStatsTitleProps {
   order?: string;
@@ -39,7 +39,7 @@ export const SearchTitle = styled.h2`
 `;
 
 export const TasksIcon = styled.i`
-  color: ${props => props.theme.primary};
+  color: ${props => props.theme.color.primary};
 `;
 
 export const SearchIcon = styled.i`
@@ -96,7 +96,7 @@ export const Notifications = styled.span`
   display: inline-block;
   width: 18px;
   margin-left: 5px;
-  background-color: ${props => props.theme.primary};
+  background-color: ${props => props.theme.color.primary};
   color: black;
   border-radius: 50%;
   line-height: 18px;
@@ -110,7 +110,7 @@ export const Footer = styled.footer`
 `;
 
 export const Highlighted = styled.span`
-  color: ${p => p.theme.primary};
-  border-bottom: 1px dotted ${p => p.theme.primary};
+  color: ${p => p.theme.color.primary};
+  border-bottom: 1px dotted ${p => p.theme.color.primary};
   cursor: pointer;
 `;

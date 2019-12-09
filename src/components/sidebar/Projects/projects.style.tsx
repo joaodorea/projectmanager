@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "../../../assets/styled/styled-components";
 
 export interface IItemProps {
   selected?: boolean;
@@ -20,5 +20,5 @@ export const Image = styled.div<IImageProps>`
   height: 20px;
   border-radius: 4px;
   margin-right: 10px;
-  background: ${props => props.url || props.theme.primary};
+  background: ${props => props.url || props.theme.color.primary};
 `;

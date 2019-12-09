@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "../../../assets/styled/styled-components";
 
 export const Wrapper = styled.div`
   display: grid;

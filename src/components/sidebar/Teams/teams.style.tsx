@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "../../../assets/styled/styled-components";
 
 export const Teams = styled.div``;
 export const Item = styled.div`
@@ -15,7 +15,7 @@ export const UserAvatar = styled.img`
   height: 20px;
   border-radius: 50%;
   margin-right: 5px;
-  background: ${props => props.src || props.theme.primary};
+  background: ${props => props.src || props.theme.color.primary};
 `;
 export const Text = styled.p`
   flex: 1;

@@ -1,11 +1,11 @@
-import styled from "styled-components";
+import styled from "../../assets/styled/styled-components";
 import { IHeaderProps } from "./index.interface";
 
 export const Header = styled.header<IHeaderProps>`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: ${p => p.theme.PL};
+  padding: ${p => p.theme.space[5]};
   padding-bottom: ${p =>
     p.submenu ? 0 : p.theme.space[4]};
   color: ${p => p.theme.headerMainTextColor};

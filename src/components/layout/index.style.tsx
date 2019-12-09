@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "../../assets/styled/styled-components";
 
 export const Layout = styled.div`
   display: grid;
@@ -10,5 +10,5 @@ export const Layout = styled.div`
 
 export const Content = styled.div`
   background-color: ${p => p.theme.color.beige};
-  padding: ${p => p.theme.PL};
+  padding: ${p => p.theme.space[5]};
 `;

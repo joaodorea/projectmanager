@@ -2,7 +2,7 @@ export default interface StyleClosetTheme {
   color: Color;
   fontSize: string[];
   fontWeight: fontWeight;
-  space: string[];
+  space: Array<string>;
   BtnRadius: string[];
   title: any;
   BtnSmRadius: any;
