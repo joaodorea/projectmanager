@@ -1,12 +1,9 @@
 import React from "react";
 
-import Activity from "./modules/activity/index";
-// import Files from "./modules/files/index";
-// import Home from "./modules/home/index";
-
 import { Layout } from "./components/layout/index.style";
 import Header from "./components/header/";
 import Sidebar from "./components/sidebar/";
+import Router from "./router";
 
 import Theme from "./assets/styled/component";
 
@@ -16,7 +13,7 @@ function App() {
       <Layout>
         <Sidebar />
         <Header />
-        <Activity />
+        <Router />
       </Layout>
     </Theme>
   );

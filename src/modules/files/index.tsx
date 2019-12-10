@@ -1,10 +1,11 @@
 import React, { FunctionComponent } from "react";
+import { RouteComponentProps } from "@reach/router";
 
 import TableList from "../../components/tablelist";
 
 import { Content } from "../../components/layout/index.style";
 
-const Home: FunctionComponent = () => {
+const Files: FunctionComponent<RouteComponentProps> = () => {
   return (
     <Content>
       <TableList />
@@ -12,4 +13,4 @@ const Home: FunctionComponent = () => {
   );
 };
 
-export default Home;
+export default Files;

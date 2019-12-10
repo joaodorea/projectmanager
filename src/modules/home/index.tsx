@@ -1,12 +1,12 @@
 import React, { FunctionComponent } from "react";
+import { RouteComponentProps } from "@reach/router";
 
-// import TableList from "../components/tablelist";
 import Activities from "../../components/activities";
 
 // import { Content } from "../../components/layout/index.style";
 import { Content, Column, Card, Title } from "./index.style";
 
-const Home: FunctionComponent = () => {
+const Home: FunctionComponent<RouteComponentProps> = () => {
   return (
     <Content>
       <Column>
