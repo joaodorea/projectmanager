@@ -64,7 +64,7 @@ color.darkGray = color.grays[9];
 color.dividerColor = color.grays[2];
 
 const title = css`
-  font-size: ${p => p.theme.fontSize.lg};
+  font-size: ${fontSize[2]};
   font-weight: ${p => p.theme.fontWeight.bold};
 `;
 

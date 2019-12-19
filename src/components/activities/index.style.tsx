@@ -26,7 +26,7 @@ export const SubTitle = styled.h3`
 export const List = styled.div``;
 export const Item = styled.div`
   display: grid;
-  grid-template: 1fr 1fr/ 50px 1fr;
+  grid-template: 1fr auto/ 50px 1fr;
   grid-column-gap: 15px;
   margin: ${p => p.theme.space[3]} 0;
 `;
@@ -34,14 +34,14 @@ export const Icon = styled.div<IIconProps>`
   border-radius: 50%;
   background: ${({ color, theme }: any) => theme.color[color] || color};
   color: hsla(0, 0%, 0%, 0.7);
-  font-size: ${p => p.theme.fontSize[3]};
+  font-size: ${p => p.theme.fontSize[1]};
   text-align: center;
   line-height: 40px;
   width: 40px;
   margin: auto;
 `;
 export const Text = styled.p`
-  margin-bottom: ${p => p.theme.space[3]};
+  margin-bottom: ${p => p.theme.space[2]};
 `;
 export const Time = styled.div`
   grid-column: 2/3;
