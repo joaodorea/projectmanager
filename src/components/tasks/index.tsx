@@ -4,7 +4,7 @@ import {
   Container,
   Title,
   NewTask,
-  Task,
+  TaskItem,
   Description,
   Owner,
   Avatar,
@@ -16,49 +16,28 @@ interface IProps {
   title: string;
 }
 
+export const Task = () => {
+  return (
+    <TaskItem>
+      <CheckBox />
+      <Description>Find top 5 customers and get review from them.</Description>
+      <Owner>
+        <Avatar circle src="http://lorempixel.com/100/100/people/1" />
+        <Category color="#7656d6">Marketing</Category>
+      </Owner>
+    </TaskItem>
+  );
+};
+
 const TaskList: FunctionComponent<IProps> = ({ title }) => {
   return (
     <Container padding>
       <Title>
         {title} <NewTask color="#3e8e41">+ Add Task</NewTask>
       </Title>
-      <Task>
-        <CheckBox />
-        <Description>
-          Find top 5 customers and get review from them.
-        </Description>
-        <Owner>
-          <Avatar
-            circle
-            src="http://lorempixel.com/100/100/people/1"
-          />
-          <Category color="#7656d6">Marketing</Category>
-        </Owner>
-      </Task>
-      <Task>
-        <CheckBox checked />
-        <Description>Finish this app til feb.</Description>
-        <Owner>
-          <Avatar
-            circle
-            src="http://lorempixel.com/100/100/people/2"
-          />
-          <Category color="#FF9800">Development</Category>
-        </Owner>
-      </Task>
-      <Task>
-        <CheckBox checked />
-        <Description>
-          Start the backend when the basic layout is done.
-        </Description>
-        <Owner>
-          <Avatar
-            circle
-            src="http://lorempixel.com/100/100/people/2"
-          />
-          <Category color="#FF9800">Development</Category>
-        </Owner>
-      </Task>
+      <Task />
+      <Task />
+      <Task />
     </Container>
   );
 };

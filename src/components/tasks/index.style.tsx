@@ -32,7 +32,7 @@ export const NewTask = styled.button`
   float: right;
 `;
 
-export const Task = styled.div`
+export const TaskItem = styled.div`
   position: relative;
   background-color: ${p => p.theme.color.grays[2]};
   padding: ${p => p.theme.space[3]};
