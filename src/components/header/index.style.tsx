@@ -5,9 +5,9 @@ export const Header = styled.header<IHeaderProps>`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  background-color: white;
   padding: ${p => p.theme.space[5]};
-  padding-bottom: ${p =>
-    p.submenu ? 0 : p.theme.space[4]};
+  padding-bottom: ${p => (p.submenu ? 0 : p.theme.space[4])};
   color: ${p => p.theme.headerMainTextColor};
   box-shadow: 3px 3px 6px hsl(0, 0%, 95%);
 `;

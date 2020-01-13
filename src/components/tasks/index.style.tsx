@@ -36,7 +36,7 @@ export const TaskItem = styled.div`
   position: relative;
   background-color: ${p => p.theme.color.grays[2]};
   padding: ${p => p.theme.space[3]};
-  padding-left: ${p => p.theme.space[6]};
+  padding-left: ${p => p.theme.space[7]};
   border-radius: ${p => p.theme.BtnRadius[2]};
   margin-bottom: ${p => p.theme.space[2]};
 `;

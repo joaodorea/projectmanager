@@ -4,10 +4,7 @@ interface ICardProps {
   padding?: boolean;
 }
 
-export const Content = styled.div`
-  /* display: grid; */
-  /* grid-template: 1fr / 2fr 1fr; */
-  grid-column-gap: 20px;
+export const Container = styled.div`
   background-color: ${p => p.theme.color.beige};
   padding: ${p => p.theme.space[4]};
 `;

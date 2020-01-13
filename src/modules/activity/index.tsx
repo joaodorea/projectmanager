@@ -3,13 +3,13 @@ import { RouteComponentProps } from "@reach/router";
 
 import Activities from "../../components/activities";
 
-import { Content } from "./index.style";
+import { Container } from "./index.style";
 
 const Home: FunctionComponent<RouteComponentProps> = () => {
   return (
-    <Content>
+    <Container>
       <Activities />
-    </Content>
+    </Container>
   );
 };
 

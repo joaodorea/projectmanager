@@ -2,6 +2,8 @@ import React, { FC, useState } from "react";
 import { RouteComponentProps } from "@reach/router";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 
+import { Container, ColumnWrapper, Column, Title } from "./index.style";
+
 import { Task } from "../../components/tasks";
 
 interface IState {
@@ -43,7 +45,6 @@ const initialData: IState = {
 const Kanban: FC<RouteComponentProps> = function() {
   const [state, setState] = useState(initialData);
   const onDragEnd = (result: any) => {
-    console.log(result);
     const { destination, source } = result;
     if (!destination) return;
 
@@ -62,7 +63,7 @@ const Kanban: FC<RouteComponentProps> = function() {
   };
 
   return (
-    <div className="wrapper">
+    <Container>
       <DragDropContext onDragEnd={onDragEnd}>
         {state.columnOrder.map((columnId, index) => {
           const column = state.columns[columnId];
@@ -70,10 +71,11 @@ const Kanban: FC<RouteComponentProps> = function() {
             (taskId: any) => state.tasks[taskId]
           );
           return (
-            <div className="column" key={index}>
+            <ColumnWrapper key={index}>
+              <Title>{column.title}</Title>
               <Droppable droppableId={column.id}>
                 {provided => (
-                  <div ref={provided.innerRef} {...provided.droppableProps}>
+                  <Column ref={provided.innerRef} {...provided.droppableProps}>
                     {tasks.map((
                       task: any,
                       index: number // key=task.id task=task
@@ -95,14 +97,14 @@ const Kanban: FC<RouteComponentProps> = function() {
                       </Draggable>
                     ))}
                     {provided.placeholder}
-                  </div>
+                  </Column>
                 )}
               </Droppable>
-            </div>
+            </ColumnWrapper>
           );
         })}
       </DragDropContext>
-    </div>
+    </Container>
   );
 };
 

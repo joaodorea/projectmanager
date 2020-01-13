@@ -2,19 +2,19 @@ Finish home component
 extend activity comp to a page
 
 Pages:
-    home
-    files
-activity
+        home
+        files
+        activity
+        kanban
 teams
-kanban
 tasks
 calendar
 profile settings
 chat
-login
 
+login
 set-up
 sign in
 
 Modals:
-New team
+New team (portal)

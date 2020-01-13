@@ -5,7 +5,7 @@ export const Layout = styled.div`
   min-height: 100vh;
   max-width: 100vw;
   width: 100%;
-  grid-template: auto 1fr/350px 1fr;
+  grid-template: auto 1fr/300px 1fr;
 `;
 
 export const Content = styled.div`

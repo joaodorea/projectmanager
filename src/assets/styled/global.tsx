@@ -21,25 +21,5 @@ export default createGlobalStyle`
             -webkit-box-sizing: border-box;
             box-sizing: border-box;
         }
-
-
-
-
-        .wrapper {
-            display: flex;
-
-            .column {
-                flex: 1;
-                margin: 10px;
-                background: lightblue;
-                padding: 20px;
-                border-radius: 5px;
-
-                & > * {
-                    height: 100%;
-                    min-height: 100px;
-                }
-            }
-        }
     }
 `;
